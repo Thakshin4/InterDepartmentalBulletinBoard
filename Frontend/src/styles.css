@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styling */
+body {
+  background-color: #1a1a1a; /* Dark background color */
+  color: #ffffff; /* Text color */
+  font-family: "Arial", sans-serif; /* Specify your desired font */
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+button {
+  background-color: #3498db; /* Button background color */
+  color: #ffffff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: none;
+  border-radius: 5px; /* Button border radius */
+  cursor: pointer;
+  margin: 10px;
+}
+
+input {
+  background-color: #292929; /* Input field background color */
+  color: #ffffff; /* Input field text color */
+  padding: 10px; /* Input field padding */
+  border: 1px solid #3498db; /* Input field border */
+  border-radius: 5px; /* Input field border radius */
+  margin: 10px;
+}
+
+textarea {
+  background-color: #292929; /* Input field background color */
+  color: #ffffff; /* Input field text color */
+  padding: 10px; /* Input field padding */
+  border: 1px solid #3498db; /* Input field border */
+  border-radius: 5px; /* Input field border radius */
+  margin: 10px;
+}
+
+a {
+  color: #3498db; /* Hyperlink text color */
+  text-decoration: none; /* Remove underline from hyperlinks */
+}
+
+/* Form Styling */
+form {
+  margin: 20px 0;
+}
+
+/* Card Styling */
+.card {
+  background-color: #292929; /* Card background color */
+  padding: 20px; /* Card padding */
+  border: 1px solid #3498db; /* Card border */
+  border-radius: 10px; /* Card border radius */
+  margin: 10px;
+  width: 50%;
+}
+
+/* Additional Styles for Specific Elements */
+/* You can add more styles for specific elements as needed. */
