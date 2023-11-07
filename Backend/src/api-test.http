@@ -1,0 +1,41 @@
+### Get All Posts
+
+GET https://localhost:3000/api/posts
+
+### Get Specified Posts
+
+GET https://localhost:3000/api/posts/1
+
+### Create a New Post
+
+POST https://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "New Post",
+  "content": "This is a new post."
+}
+
+### Delete a Post
+
+DELETE https://localhost:3000/api/posts/1
+
+### Register New User
+
+POST https://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+  "username": "user4",
+  "password": "password4"
+}
+
+### Logon
+
+POST https://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "username": "user4",
+  "password": "password4"
+}
