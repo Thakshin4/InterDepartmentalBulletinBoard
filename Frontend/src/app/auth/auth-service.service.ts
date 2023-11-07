@@ -12,10 +12,11 @@ export class AuthServiceService {
 
   constructor(private http: HttpClient) { }
 
-    // Method to register a new user
+  // Method to register a new user
   registerUser(userData: any) {
-    this.http.post(`${this.backendUrl}/register`, {userData}).subscribe(response => {});
+    return this.http.post(`${this.backendUrl}/register`, userData);
   }
+  
 
   // Method to log in a user
   loginUser(userData: any) {
