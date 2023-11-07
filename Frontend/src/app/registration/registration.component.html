@@ -1,5 +1,5 @@
 <div>
-  <h2>Registration</h2>
+  <h2>Sign Up</h2>
   <form (ngSubmit)="registerUser()">
     <div>
       <label for="username">Username:</label>
@@ -9,9 +9,13 @@
         [(ngModel)]="userData.username"
         name="username"
         required
-        minlength="5"
+        minlength="1"
         maxlength="20"
+        #username="ngModel"
       />
+      <div *ngIf="username.invalid && (username.dirty || username.touched)">
+        <div *ngIf="username.errors">Username is required.</div>
+      </div>
     </div>
     <div>
       <label for="password">Password:</label>
@@ -21,8 +25,13 @@
         [(ngModel)]="userData.password"
         name="password"
         required
+        #password="ngModel"
       />
+      <div *ngIf="password.invalid && (password.dirty || password.touched)">
+        <div *ngIf="password.errors">Password is required.</div>
+      </div>
     </div>
+
     <button type="submit">Register</button>
   </form>
 </div>
